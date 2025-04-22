@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Verificar el estado almacenado en localStorage para el idioma
     const savedLanguage = localStorage.getItem('language');
     
-    if (savedLanguage === 'es') {
-        checkBox.checked = true;
+    if (savedLanguage === 'en') {
+        checkBox.checked = false;
         enText.style.color = 'var(--text-color)';
         esText.style.color = 'var(--hover-color)';
     } else {
-        checkBox.checked = false;
+        checkBox.checked = true;
         enText.style.color = 'var(--hover-color)';
         esText.style.color = 'var(--text-color)';
     }
